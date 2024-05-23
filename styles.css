@@ -1,0 +1,93 @@
+body{
+    background-color: #1B1B1A;
+    height: 100vh;
+    width: 98.5vw;
+    margin: 0;
+}
+.header{
+    margin: 0;
+    background-image: url(imgs/m-o-e-yMrmEd-GjJU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60%;
+    width: 100%;
+}
+.opacity-box{
+    background-color: #1B1B1A;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    opacity: 0.5;
+    margin: 0;
+}
+.opacity-box nav{
+    list-style-type: none;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+}
+.opacity-box nav li{
+    opacity: 1;
+    display: inline;
+    float: inline-end;
+    padding: 40px;
+    font-size: 1.4rem;
+}
+.opacity-box .title{
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top :30%;
+    font-size: 5.5em;
+    display: flex;
+    align-self: center;
+    opacity: 1;
+    left: 60px;
+}
+.description{
+    font-size: x-large;
+    color: #fff;
+    text-wrap: break-word;
+    width: 50%;
+    position: absolute;
+    top: 49%;
+    opacity: 1;
+    left: 20px;
+}
+.menu{
+    height: 100%;
+    width: 100%
+}
+.menu_bg{
+    height: 12%;
+    width: 14%;
+    background-color: #8C400C;
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 30px;
+    justify-self: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.menu_bg p{
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #fff;
+}
+.foods{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 10px; */
+}
+.food_box{
+    background-color: #282825;
+    height: 75%;
+    width: 65%;
+    /* margin: 70px; */
+    /* flex: 0 0 33.33%; */
+}
