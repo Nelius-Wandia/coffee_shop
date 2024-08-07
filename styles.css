@@ -1,93 +1,137 @@
 body{
-    background-color: #1B1B1A;
+    margin: 0;
     height: 100vh;
-    width: 98.5vw;
-    margin: 0;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-.header{
-    margin: 0;
-    background-image: url(imgs/m-o-e-yMrmEd-GjJU-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+.landing_page{
+    /* background-color: #5d3d1d; */
+    background-image: url(imgs/8040\ \(1\).jpg);
     background-repeat: no-repeat;
-    height: 60%;
+    background-position: center bottom ;
+    height: 90%;
     width: 100%;
+    margin: 0;
+    position: relative;
 }
-.opacity-box{
-    background-color: #1B1B1A;
+
+.landing_page .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.content img{
+    z-index: 1;
+}
+
+.overlay{
     height: 100%;
     width: 100%;
-    position: relative;
-    opacity: 0.5;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background-color: #5d3d1d;
+    position: absolute;
+}
+.text_container{
+    height: 0%;
+    width: 80%;
+    padding-right: 20%;
+    z-index: 1;
+    opacity: 1;
+}
+.text_container .welcome {
+    font-size: 4em;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    margin-top: 15%;
+}
+.text_container .name {
+    font-family: 'Concert One', cursive;
+    color: #fff;
+    font-size: 10em;
+    font-weight: 800;
+    text-align: center;
     margin: 0;
 }
-.opacity-box nav{
-    list-style-type: none;
+.text_container .phrase{
+    font-family: 'Grey Qo', cursive;
     color: #fff;
-    position: absolute;
-    width: 100%;
-}
-.opacity-box nav li{
-    opacity: 1;
-    display: inline;
-    float: inline-end;
-    padding: 40px;
-    font-size: 1.4rem;
-}
-.opacity-box .title{
-    color: #fff;
+    font-size: 3em;
+    text-align: center;
     margin: 0;
-    position: absolute;
-    top :30%;
-    font-size: 5.5em;
-    display: flex;
-    align-self: center;
-    opacity: 1;
-    left: 60px;
+
 }
-.description{
-    font-size: x-large;
-    color: #fff;
-    text-wrap: break-word;
-    width: 50%;
-    position: absolute;
-    top: 49%;
-    opacity: 1;
-    left: 20px;
+body > p{
+    color: rgb(181, 115, 17);
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
 }
 .menu{
-    height: 100%;
-    width: 100%
-}
-.menu_bg{
-    height: 12%;
-    width: 14%;
-    background-color: #8C400C;
-    margin-top: 50px;
+    /* padding: 20px 20px 20px 20px; */
     display: grid;
-    place-items: center;
-    border-radius: 30px;
-    justify-self: center;
-    margin: auto;
-    margin-top: 50px;
-}
-.menu_bg p{
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: 800;
-    color: #fff;
-}
-.foods{
     width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    /* grid-column: 1fr 1fr 1fr; */
     /* gap: 10px; */
+    /* background-color: #fff; */
 }
-.food_box{
-    background-color: #282825;
-    height: 75%;
-    width: 65%;
-    /* margin: 70px; */
-    /* flex: 0 0 33.33%; */
+.menu_card {
+    background-color: #cdb693;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    /* padding: 0px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    text-align: center;
+    overflow: hidden;
+}
+.menu_card h2 {
+    color: #5d3d1d;
+}
+.menu_card span {
+    font-size: x-large;
+}
+.menu_card img {
+    width: 100%;
+    height: 400px;
+    /* padding: 0; */
+    /* height: auto; */
+    /* border-radius: 10px 10px 0 0; */
+    object-fit: cover;
+    /* padding-top: 10px; */
+    /* margin-top: 10px; */
+}
+.menu_card_details {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    /* height: 100%; */
+    /* padding: 10px; */
+}
+.menu_card_details button {
+    background-color: #342716;
+    color:rgb(255, 255, 255);
+    padding: 10px 20px;
+    width: 85%;
+    font-size: medium;
+    font-weight: 700;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
 }
